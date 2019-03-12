@@ -20,8 +20,22 @@ public class LearningOperators {
 		
 boolean isAlien = false;
 
-if(isAlien == false) {
+if(isAlien == true) {
 	System.out.println("It not an Alien");
+}else {
+	System.out.println("NOT!");
+}
+
+int topScore = 100;
+if(topScore != 101) {
+	System.out.println("Top score is 100");
+}else {
+	System.out.println("False");
+}
+
+int newTopScore = 90;
+if(newTopScore >80 && newTopScore <90) {
+	System.out.println("The grade is B+");
 }
 		
 	}
