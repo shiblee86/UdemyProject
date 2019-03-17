@@ -53,7 +53,7 @@ public class LearningOperators {
 			System.out.println("Print " + isCar);
 		}
 
-		boolean wasCar = isCar ? true : false;
+		boolean wasCar = isCar;
 		System.out.println(wasCar);
 
 		int income = 4000;
