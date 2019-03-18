@@ -65,14 +65,18 @@ public class NewMethods {
 
     }
 
-    public void getFinalScore(boolean gameOver, int score, int levelCompleted, int bonus){
+    public static int getFinalScore(boolean gameOver, int score, int levelCompleted, int bonus){
 
         System.out.println("\n\tgetFinalScore Method");
         System.out.println("************************");
+
+        int finalScore;
         if(gameOver){
-            int finalScore = score + (levelCompleted * bonus) + 2000;
+            finalScore = score + (levelCompleted * bonus) + 2000;
             System.out.println("Your Final score was " + finalScore);
+            return finalScore;
         }
+        return -1;
 
     }
 
