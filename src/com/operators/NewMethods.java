@@ -64,7 +64,10 @@ public class NewMethods {
         }
 
     }
-
+    /* It a non-void message is used, the method signature must have the data type being returned. In our case it is int
+    The method must also have a return statement. In our case we have to write return -1 at the end since return finalScore
+    being returned depends on gameOver being true. Hence, we must have something being returned.
+     */
     public static int getFinalScore(boolean gameOver, int score, int levelCompleted, int bonus){
 
         System.out.println("\n\tgetFinalScore Method");
@@ -75,8 +78,11 @@ public class NewMethods {
             finalScore = score + (levelCompleted * bonus) + 2000;
             System.out.println("Your Final score was " + finalScore);
             return finalScore;
+        }else{
+            return -1;
         }
-        return -1;
+
+        /* having -1 returned means there is an error.*/
 
     }
 
