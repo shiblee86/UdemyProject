@@ -17,6 +17,8 @@ public class MeanMedianMode {
             out.println(listOfnumbers[i]);
         }
         out.println();
+
+        //Finding the average of the array:
         int sum = 0;
         for(int i : listOfnumbers){
             sum += i;
@@ -27,15 +29,20 @@ public class MeanMedianMode {
         int sum1 = IntStream.of(listOfnumbers).sum();
         out.println(sum1);
 
-        double b = 1000.00;
-        b += 5000.00;
+        DecimalFormat df = new DecimalFormat();
+        //df.setMaximumFractionDigits(2);
+        df.setMinimumFractionDigits(2);
 
-        out.println("The value of b is " + b);
+        double b = 1000d;
+        b += 5000;
+        out.println("The value of b is " + df.format(b));
+               out.println();
 
-        out.println("plusTenNumbers array");
+        int j = 20191234;
+
         int [] bookingNumbers = new int[6];
         double [] bookingValues = new double [6];
-        int j = 20191234;
+
         for(int i = 0; i < bookingNumbers.length; i++){
             bookingNumbers[i] = j;
             j+=1;
@@ -43,7 +50,6 @@ public class MeanMedianMode {
             bookingValues[i] = b;
             b+=5000;
             //System.out.println(bookingValues[i]);
-            DecimalFormat df = new DecimalFormat("#.##");
             out.println("Booking number " + df.format(bookingNumbers[i]) + "'s value is $" + df.format(bookingValues[i]));
         }
     }
