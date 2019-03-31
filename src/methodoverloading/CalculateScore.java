@@ -18,8 +18,8 @@ public class CalculateScore {
 		System.out.println("No player name, no player score");
 		return 0;
 	}
-	
-	
+
+
 
 	public static void main(String[] args) {
 
