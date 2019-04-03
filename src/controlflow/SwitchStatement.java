@@ -26,10 +26,10 @@ public class SwitchStatement {
                 System.out.println("The value was 1");
                 break;
             case 2:
-                System.out.println("The value was 2");
-                break;
             case 3:
             case 4:
+                System.out.println("The value was 2");
+                break;
             case 5:
                 System.out.println("Actually it was " + switchValue);
             default:
