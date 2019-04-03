@@ -59,7 +59,6 @@ public class NumberOfDaysInMonth {
         }
     }
 
-
     public static void main(String[] args) {
         System.out.println(getDaysInMonth(4, 2018));
         System.out.println(isLeapYear(2018));
