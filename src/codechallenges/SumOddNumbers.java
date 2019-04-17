@@ -20,7 +20,7 @@ public class SumOddNumbers {
         } else if (start > 0 && end > 0 && end >= start) {
             int sum = 0;
             for (int i = start; i <= end; i++) {
-                if (isOdd(i)) {
+                if (isOdd(i) == true) {
                     sum += i;
                 }
             }
@@ -31,6 +31,6 @@ public class SumOddNumbers {
     }
 
     public static void main(String[] args) {
-        System.out.println(sumOdd(8, 1000));
+        System.out.println(sumOdd(100, 1000));
     }
 }
