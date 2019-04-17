@@ -46,6 +46,7 @@ public class MeanMedianMode {
         for(int i = 0; i < bookingNumbers.length; i++){
             bookingNumbers[i] = j;
             j+=1;
+            b+=5000;
             //System.out.println(bookingNumbers[i]);
             bookingValues[i] = b;
             b+=5000;
