@@ -29,7 +29,7 @@ public class LearnWhileLoop {
         } while (newCount != 6);
         /*With do while loop, the code inside the block is executed first and then the condition
         inside the while statement is valued.
-        For example, let's set the value of count to 7. So, Java will first first Count value was 6.
+        For example, let's set the value of count to 7. So, Java will first set the value of newCount to 7 and print.
         Once the print is complete, Java will then go inside while loop to check the condition. Java finds
         the condition to be false since 7 is not equal to 6. Hence, it will not go back inside the do statement.
          */
